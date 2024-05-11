@@ -1,0 +1,419 @@
+.table {
+    /*border: 2px solid orange;*/
+    /*width: 82vw;*/
+    width: 81vw;
+    /*height: 90vh;*/
+    height: 100vh;
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    /*border-radius: .8rem;*/
+    overflow: hidden;
+    position: absolute;
+    transform: translate(11.5%);
+    /*background-color: rgb(44,45,49) ;*/
+    transition: background-color 0.5s ease;
+    
+}
+.tabledark{
+    background-color: var(--color-barra-lateral) ;
+    transition: background-color 0.3s ease;
+}
+.table__header {
+    /*border: 2px solid dimgrey;*/
+    width: 100%;
+    height: 10%;
+    background-color: #fff4;
+    padding: .8rem 2rem;
+     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+.tableheaderdark{
+    background-color: var(--color-barra-lateral) ;
+    transition: background-color 0.5s ease;
+}
+.table__header .input-group {
+    /*border: 2px solid green;*/
+    width: 35%;
+    height: 100%;
+    background-color: #fff5;
+    padding: 0 .8rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .2s;
+}
+
+.table__header .input-group:hover {
+    width: 45%;
+    background-color: #fff8;
+    box-shadow: 0 .1rem .4rem #0002;
+}
+
+.table__header .input-group img {
+    /*border: 2px solid purple;*/
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.table__header .input-group input {
+    /*border: 2px solid yellow;*/
+    width: 100%;
+    padding: 0 .5rem 0 .3rem;
+    background-color: transparent;
+    border: none;
+    outline: none;   
+}
+h1{
+color: black;
+}
+.h1dark{
+    /*color: #dcdcdc;*/
+    color: #fffb;
+}
+.table__body {
+    /*border: 2px solid rgb(97, 95, 95);*/
+    width: 95%;
+    max-height: calc(89% - 1.6rem);
+    background-color: #fffb;
+
+    margin: .8rem auto;
+    border-radius: .6rem;
+
+    overflow: auto;
+    overflow: overlay;
+}
+
+
+.table__body::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.table__body::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.table__body:hover::-webkit-scrollbar-thumb{ 
+    visibility: visible;
+}
+
+
+table {
+    /*border: 2px solid green;*/
+    width: 100%;
+}
+
+td img {
+    /*border: 2px solid blue;*/
+    width: 36px;
+    height: 36px;
+    margin-right: .5rem;
+    border-radius: 50%;
+
+    vertical-align: middle;
+}
+
+table, th, td {
+    /*border: 2px solid orange;*/
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: left;
+}
+
+thead th {
+    /*border: 2px solid red;*/
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #239089/*#d5d1defe*/;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #0000000b;
+}
+
+tbody tr {
+    /*border: 5px solid red;*/
+    --delay: .1s;
+    transition: .5s ease-in-out var(--delay), background-color 0s;
+}
+
+tbody tr.hide {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+/*tbody tr:hover {
+    background-color: #fff6 !important;
+}*/
+
+tbody tr td,
+tbody tr td p,
+tbody tr td img {
+    transition: .2s ease-in-out;
+}
+
+tbody tr.hide td,
+tbody tr.hide td p {
+    padding: 0;
+    font: 0 / 0 sans-serif;
+    transition: .2s ease-in-out .5s;
+}
+
+/*tbody tr.hide td img {
+    width: 0;
+    height: 0;
+    transition: .2s ease-in-out .5s;
+}
+
+.status {
+    border: 2px solid green;
+    /*padding: .4rem 0;
+    border-radius: 2rem;
+    /*text-align: center;
+    font-size: 0px;
+}
+
+.status.delivered {
+    background-color: #86e49d;
+    color: #006b21;
+}
+
+.status.cancelled {
+    background-color: #d893a3;
+    color: #b30021;
+}
+
+.status.pending {
+    background-color: #ebc474;
+}
+
+.status.shipped {
+    background-color: #6fcaea;
+}*/
+
+
+@media (max-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 12.1rem;
+    }
+}
+/*thead th span.icon-arrow {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    border: 1.4px solid transparent;
+    
+    text-align: center;
+    font-size: 1rem;
+    
+    margin-left: .5rem;
+    transition: .2s ease-in-out;
+}*/
+
+/*thead th:hover span.icon-arrow{
+    border: 1.4px solid #6c00bd;
+}*/
+
+/*th:hover {
+    color: #5564eb;
+}*/
+
+/*thead th.active span.icon-arrow{
+    background-color: #6c00bd;
+    color: #fff;
+}*/
+
+/*thead th.asc span.icon-arrow{
+    transform: rotate(180deg);
+}*/
+
+/*thead th.active,tbody td.active {
+    color: #6c00bd;
+}*/
+
+.export__file {
+    position: relative;
+}
+
+.export__file .export__file-btn {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background: #fff6 url(export.png) center / 80% no-repeat;
+    border-radius: 50%;
+    transition: .2s ease-in-out;
+}
+
+.export__file .export__file-btn:hover { 
+    background-color: #fff8;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.export__file input {
+    display: none;
+}
+
+.export__file .export__file-options {
+    /*border: 2px solid purple;*/
+    position: absolute;
+    right: 0;
+    
+    width: 12rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    text-align: center;
+
+    opacity: 0;
+    transform: scale(.8);
+    transform-origin: top right;
+    
+    box-shadow: 0 .2rem .5rem #0004;
+    
+    transition: .2s;
+}
+
+.export__file input:checked + .export__file-options {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 100;
+}
+
+.export__file .export__file-options label{
+    /*border: 2px solid blue;*/
+    display: block;
+    width: 100%;
+    padding: .6rem 0;
+    background-color: #f2f2f2;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    transition: .2s ease-in-out;
+}
+
+/*.export__file*/ /*.export__file-options label:first-of-type{
+    /*border: 2px solid orange;
+    padding: 1rem 0;
+    background-color: /*rgb(105, 185, 197)*//*rgb(0,0,0)*//*86e49d !important;
+    color: white;
+}*/
+.expo{
+    padding: 1rem 0;
+    background-color: /*rgb(105, 185, 197)*/rgb(0,0,0)/*86e49d*/ !important;
+    color: white;
+    height: 52px;
+}
+.exportardark{
+    background-color: var(--color-barra-lateral)/*rgb(44,45,49)*/ !important;
+    /*color: #fffb;*/
+}
+
+.export__file .export__file-options label:hover{
+    /*border: 2px solid red;*/
+    transform: scale(1.05);
+    background-color: #fff;
+    cursor: pointer;
+}
+/*.export__file .export__file-options label:first-of-type:hover{
+    color: white;
+}*/
+.export__file .export__file-options img{
+    width: 2rem;
+    height: auto;
+}
+.buscardark/*.input-group*/{
+    ::placeholder {
+        color: black/*var(--color-barra-lateral)*//*#fffb*/;
+    }
+   
+}
+/*.inputdark{
+   color: #fffb;
+}*/
+/*.body{
+    font-size: 12pt;
+    margin: 20mm;
+}*/
+/*header{
+    display: none;
+}*/
+
+/*@media print {
+    /* Ocultar elementos que no deben ser impresos 
+    .table__header {
+        display: none;
+    }
+    .export__file {
+        display: none;
+    }
+    /* Ajustar el tamaño de la tabla para que se imprima correctamente 
+    .table {
+        width: 100%;
+        height: auto;
+        position: static;
+        transform: none;
+        overflow: visible;
+        backdrop-filter: none;
+        box-shadow: none;
+        background-color: transparent;
+        margin-bottom: 1rem; /* Espacio entre tablas 
+    }
+    .table__body {
+        max-height: none;
+        overflow: visible;
+    }
+    /* Estilos de la tabla para la impresión 
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 0.5rem;
+        border: 1px solid #000; /* Añadir bordes a las celdas 
+        text-align: left;
+    }
+    thead th {
+        background-color: #f2f2f2; /* Color de fondo para las celdas de encabezado 
+        position: static; /* Eliminar el posicionamiento pegajoso 
+    }
+    tbody tr:nth-child(even) {
+        background-color: #f9f9f9; /* Color de fondo para filas pares 
+    }
+    tbody tr:hover {
+        background-color: #ffff99; /* Color de fondo al pasar el mouse 
+    }
+    td img {
+        width: 50px; /* Ajustar el tamaño de las imágenes si es necesario 
+        height: 50px;
+    }
+    /* Añadir estilos adicionales según sea necesario 
+}*/
+
+@media only screen and (max-width: 600px) {
+    .table {
+        width: 100%; /* Ajusta el ancho de la tabla */
+        transform: translate(0%);/ /* Ajusta la posición de la tabla */
+    }
+    .table__header {
+        padding: .5rem 1rem; /* Ajusta el padding del encabezado de la tabla */
+    }
+    td,
+    th {
+        padding: .5rem 1rem; /* Ajusta el padding de las celdas de la tabla */
+    }
+}
+
